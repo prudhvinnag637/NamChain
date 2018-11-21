@@ -1,10 +1,10 @@
 # NamChain
 
 #Badges
-https://img.shields.io/badge/Namchain-Planned-orange.svg
-https://img.shields.io/badge/Namchain-WIP-Blue.svg 
-https://img.shields.io/badge/Namchain-Completed-brightgreen.svg
-https://img.shields.io/badge/Namchain-WoB-red.svg
+[![](https://img.shields.io/badge/Namchain-Planned-orange.svg)]
+[![](https://img.shields.io/badge/Namchain-WIP-Blue.svg)]
+[![](https://img.shields.io/badge/Namchain-Completed-brightgreen.svg)]
+[![](https://img.shields.io/badge/Namchain-WoB-red.svg)]
 
 
 #Introduction
