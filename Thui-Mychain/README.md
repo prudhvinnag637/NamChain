@@ -1,4 +1,4 @@
-# VAAHAN-NamChain  
+# Thui-MyChain  
 ![](https://img.shields.io/badge/Thui--Mychain-WIP-blue.svg) 
 ![](https://img.shields.io/badge/madeby-Ramaguru-blue.svg)
 
