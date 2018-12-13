@@ -13,8 +13,8 @@ Namchain is a intiative to bring Blockchain based solutions
 
 
 # Projects Planned
-- VAAHAN-NamChain - ![](https://img.shields.io/badge/Vaahan--NamChain-WIP-blue.svg)
-- Thui-Mychain - ![](https://img.shields.io/badge/Thui--Mychain-WIP-blue.svg) 
+- [VAAHAN-NamChain](Vaahan-Namchain/README.md) - ![](https://img.shields.io/badge/Vaahan--NamChain-WIP-blue.svg)
+- [Thui-Mychain](Thui-Mychain/README.md) - ![](https://img.shields.io/badge/Thui--Mychain-WIP-blue.svg) 
 - Organ Donation
 
 # Acknowledgement
