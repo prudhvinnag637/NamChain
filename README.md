@@ -14,9 +14,8 @@ Namchain is a intiative to bring Blockchain based solutions
 
 # Projects Planned
 - VAAHAN-NamChain - ![](https://img.shields.io/badge/Vaahan--NamChain-WIP-blue.svg)
-- Waste Management
+- Thui-Mychain - ![](https://img.shields.io/badge/Thui--Mychain-WIP-blue.svg) 
 - Organ Donation
 
+# Acknowledgement
 
-# Courtesy
-https://github.com/mycoralhealth/blockchain-tutorial.git
