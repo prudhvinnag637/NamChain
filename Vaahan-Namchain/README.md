@@ -25,6 +25,13 @@ To be updated
     - go get github.com/davecgh/go-spew/spew
     - go get github.com/gorilla/mux
     - go get github.com/joho/godotenv
+    - go get github.com/jinzhu/copier
+    - go get github.com/torusresearch/pvss/common
+    - go get github.com/torusresearch/pvss/secp256k1
+    - go get github.com/torusresearch/pvss/pkcs7
+    - go get github.com/xlab-si/emmy/crypto/common
+    - go get github.com/xlab-si/emmy/crypto/qr
+    - go get github.com/stretchr/testify/assert
 4. Download this git repository and extract it to a directory
 5. Go to the extracted folder and rename the file "rename.env" to ".env" (Command : mv rename.env .env)
 6. go run reg.go [Registration Chain]
