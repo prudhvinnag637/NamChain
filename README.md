@@ -15,7 +15,7 @@ Namchain is a intiative to bring Blockchain based solutions
 # Projects Planned
 - [VAAHAN-NamChain](Vaahan-Namchain/README.md) - ![](https://img.shields.io/badge/Vaahan--NamChain-WIP-blue.svg)
 - [Thui-Mychain](Thui-Mychain/README.md) - ![](https://img.shields.io/badge/Thui--Mychain-WIP-blue.svg) 
-- [Dhaa-Namchain](Dhaa-Namchain/README.md) - ![](https://img.shields.io/badge/Dhaa--Namchain-Planned-orange.svg) 
+- [Dhaa-Namchain](Dhaa-Namchain/README.md) - ![](https://img.shields.io/badge/Dhaa--Namchain-WIP-blue.svg) 
 
 # Acknowledgement
 
