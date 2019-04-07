@@ -19,5 +19,9 @@ Namchain is a intiative to bring Blockchain based solutions
 
 # Acknowledgement
 
+# License
+
+[MIT](https://github.com/ramagururadhakrishnan/NamChain/blob/master/MIT)
+
 
 
