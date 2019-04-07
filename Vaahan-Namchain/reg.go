@@ -1,4 +1,7 @@
-package main
+
+// 
+
+package com.namchain.chain.reg
 
 import (
 	"crypto/sha256"
@@ -17,7 +20,7 @@ import (
 	"github.com/joho/godotenv"
 )
 
-// Block represents each 'item' in the blockchain
+// Block structure of the Registration Chain
 type Block struct {
 	Index     int
 	UUID      int
@@ -27,6 +30,7 @@ type Block struct {
 	VModel 	  string
 	VType 	  string
 	VSS		  string
+	DID  	  string
 	Timestamp string
 	Hash      string
 	PrevHash  string
@@ -48,6 +52,7 @@ type Message struct {
 
 var mutex = &sync.Mutex{}
 
+// Main function
 func main() {
 	err := godotenv.Load()
 	if err != nil {
@@ -57,7 +62,7 @@ func main() {
 	go func() {
 		t := time.Now()
 		genesisBlock := Block{}
-		genesisBlock = Block{0, 0, "", "", "", "", "", "", t.String(), calculateHash(genesisBlock), ""}
+		genesisBlock = Block{0, 0, "", "", "", "", "", "", "", t.String(), calculateHash(genesisBlock), ""}
 		spew.Dump(genesisBlock)
 
 		mutex.Lock()
@@ -90,7 +95,7 @@ func run() error {
 
 
 
-// create handlers
+// HTTP Handlers 
 func makeMuxRouter() http.Handler {
 	muxRouter := mux.NewRouter()
 	muxRouter.HandleFunc("/", handleGetBlockchain).Methods("GET")
@@ -130,7 +135,7 @@ func handleWriteBlock(w http.ResponseWriter, r *http.Request) {
 	}
 	mutex.Unlock()
 
-	respondWithJSON(w, r, http.StatusCreated, newBlock)
+	respondWithJSON(w, r, http.StatusCreated, newBlock.DID)
 
 }
 
@@ -164,6 +169,15 @@ func isBlockValid(newBlock, oldBlock Block) bool {
 
 // SHA256 hasing
 func calculateHash(block Block) string {
+	record := strconv.Itoa(block.Index) + block.Timestamp + strconv.Itoa(block.UUID) + block.VReg + block.ENo + block.CNo + block.VModel + block.VType + block.VSS + block.DID + block.PrevHash
+	h := sha256.New()
+	h.Write([]byte(record))
+	hashed := h.Sum(nil)
+	return hex.EncodeToString(hashed)
+}
+
+// Distributed Identifer
+func calculateDID(block Block) string {
 	record := strconv.Itoa(block.Index) + block.Timestamp + strconv.Itoa(block.UUID) + block.VReg + block.ENo + block.CNo + block.VModel + block.VType + block.VSS + block.PrevHash
 	h := sha256.New()
 	h.Write([]byte(record))
@@ -187,6 +201,7 @@ func generateBlock(oldBlock Block, UUID int,VReg string,ENo string,CNo string,VM
 	newBlock.VModel = VModel
 	newBlock.VType = VType
 	newBlock.VSS = VSS
+	newBlock.DID = calculateDID(newBlock)
 	newBlock.PrevHash = oldBlock.Hash
 	newBlock.Hash = calculateHash(newBlock)
 
