@@ -12,15 +12,19 @@ To be updated
 
 # Architecture
 
-To be updated
+1. Network Layer - Libp2p
+2. Storage System - Interplanetary File System
+3. Smart Contracts in Go language packaged and distributed using gx tool
+4. Native Tokens are unique non-fungible tokens
+5. Application developed using Java
 
-# Results
+# Implementation Details
 
 To be updated
 
 # Installation
 1. Install golang 
-2. Open Powershell - Install Git module 
+2. Open Powershell or Terminal - Install Git module 
 3. In Powershell Type the below commands,
     - go get github.com/davecgh/go-spew/spew
     - go get github.com/gorilla/mux
@@ -34,11 +38,10 @@ To be updated
     - go get github.com/stretchr/testify/assert
 4. Download this git repository and extract it to a directory
 5. Go to the extracted folder and rename the file "rename.env" to ".env" (Command : mv rename.env .env)
-6. go run reg.go [Registration Chain]
-7. Download Postman and install it
 
-# To Test
-1. Send HTTP Post message as Raw-JSON file to the port configured
+# Registration Chain
+6. go run reg.go
+7. Run the vehicle Registration UI and enter the vehicle details and submit to receive a Distributed Identifier [DID]
 
 # Courtesy
 https://github.com/mycoralhealth/blockchain-tutorial.git
